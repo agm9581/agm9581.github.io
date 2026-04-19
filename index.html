@@ -1,75 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antonio González Morales</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title">Antonio Gonzalez Morales | Software Engineer</title>
+    <meta name="description"
+        content="Full-stack software engineer building production software across frontend, backend, testing, and reliable delivery workflows."
+        data-i18n-attr="content:meta.description">
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="bg-dark text-white text-center py-5">
-      <img
-        src="assets/me.jpg"
-        alt="Antonio González Morales"
-        class="square-circle"
-        width="150"
-      />
-      <h1 class="mt-3">Antonio González Morales</h1>
-      <p>
-        <a href="https://github.com/agm9581" target="_blank" class="text-light"
-          >GitHub</a
-        >
-        |
-        <a
-          href="https://www.linkedin.com/in/antoniogonzalezmorales/"
-          target="_blank"
-          class="text-light"
-          >LinkedIn</a
-        >
-        |
-        <a href="mailto:antoniogonzalezm1996@gmail.com" class="text-light"
-          >Email</a
-        >
-      </p>
-    </header>
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+</head>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="stack.html">Tech Stack</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="experience.html">Experience</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body>
+    <div class="page-shell">
+        <nav class="topbar" aria-label="Primary" data-i18n-attr="aria-label:nav.ariaLabel">
+            <a class="brand" href="#top">AGM</a>
 
-    <div class="container text-center mt-5">
-      <h2>Welcome to my portfolio</h2>
-      <p>
-        In this page you will be able to see an overview of the projects I'm
-        currently working on, currently the tech stack I handle and all related
-        experience can be found in the links on the navigation bar.
-      </p>
+            <div class="topbar-copy">
+                <p class="topbar-line" data-i18n="topbar.location">Murcia, Spain</p>
+                <p class="topbar-line" data-i18n="topbar.summary">Full Stack / Frontend / APIs / QA-minded delivery</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="#profile" data-i18n="nav.profile">Profile</a>
+                <a href="#value" data-i18n="nav.value">Value</a>
+                <a href="#experience" data-i18n="nav.experience">Experience</a>
+                <a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </div>
+
+            <div class="topbar-tools">
+                <div class="language-switch" aria-label="Language switcher">
+                    <button class="language-button is-active" type="button" data-language-trigger="en" aria-pressed="true">EN</button>
+                    <button class="language-button" type="button" data-language-trigger="es" aria-pressed="false">ES</button>
+                </div>
+
+                <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"
+                    data-theme-toggle>
+                    <span class="theme-toggle-label" data-theme-label>Dark</span>
+                </button>
+            </div>
+        </nav>
+
+        <header class="hero" id="top">
+            <div class="hero-layout">
+                <div class="hero-copy">
+                    <p class="hero-kicker" data-i18n="hero.kicker">From QA automation to full-stack delivery</p>
+                    <p class="hero-name">Antonio Gonzalez Morales</p>
+                    <h1 data-i18n="hero.title">Full-stack engineer working across frontend, backend, testing, and release.</h1>
+                    <p class="hero-intro" data-i18n="hero.intro">
+                        Full-stack software engineer working across product development, frontend implementation,
+                        backend systems, testing, and delivery.
+                    </p>
+                    <p class="hero-supporting" data-i18n="hero.supporting">
+                        Most effective when owning features end to end, from interface work and API integration to
+                        backend implementation, testing, and release.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="mailto:antoniogonzalezm1996@gmail.com" data-i18n="hero.cta.email">Email me</a>
+                        <a class="button button-secondary"
+                            href="https://www.linkedin.com/in/antoniogonzalezmorales/" target="_blank"
+                            rel="noreferrer">LinkedIn</a>
+                        <a class="button button-secondary" href="https://github.com/agm9581" target="_blank"
+                            rel="noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <aside class="hero-portrait">
+                    <div class="portrait-frame">
+                        <img src="assets/me.jpg" alt="Portrait of Antonio Gonzalez Morales" class="portrait-img"
+                            data-i18n-attr="alt:hero.portraitAlt">
+                    </div>
+
+                    <div class="portrait-note">
+                        <p class="note-label" data-i18n="hero.optimize.label">What I optimize for</p>
+                        <ul class="note-list">
+                            <li data-i18n="hero.optimize.item1">Calm releases</li>
+                            <li data-i18n="hero.optimize.item2">Clear service boundaries</li>
+                            <li data-i18n="hero.optimize.item3">Less manual regression work</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="hero-band">
+                <article class="band-item">
+                    <p class="band-label" data-i18n="band.focus.label">Focus</p>
+                    <h2 data-i18n="band.focus.title">Full-stack feature ownership in production systems.</h2>
+                    <p data-i18n="band.focus.copy">Frontend work, API integration, backend logic, testing, and the practical work around release.</p>
+                </article>
+
+                <article class="band-item">
+                    <p class="band-label" data-i18n="band.edge.label">Edge</p>
+                    <h2 data-i18n="band.edge.title">A quality mindset shaped by automation, debugging, and release work.</h2>
+                    <p data-i18n="band.edge.copy">Experience across QA, frontend, backend, and cloud delivery makes me better at spotting risk before it becomes expensive.</p>
+                </article>
+
+                <article class="band-item">
+                    <p class="band-label" data-i18n="band.fit.label">Fit</p>
+                    <h2 data-i18n="band.fit.title">Teams that value ownership, reliability, and end-to-end execution.</h2>
+                    <p data-i18n="band.fit.copy">I am strongest where engineers are trusted to rethink workflows, improve product decisions, and move a feature from interface work into deployment reality.</p>
+                </article>
+            </div>
+        </header>
+
+        <main>
+            <section class="section reveal" id="profile">
+                <div class="section-shell">
+                    <p class="section-label" data-i18n="profile.label">Profile</p>
+
+                    <div class="section-main">
+                        <div class="section-heading">
+                            <p class="section-kicker" data-i18n="profile.kicker">Engineering profile</p>
+                            <h2 data-i18n="profile.title">My path into software made me care about product behavior, implementation quality, and release confidence at the same time.</h2>
+                            <p class="section-intro" data-i18n="profile.intro">
+                                I am strongest in teams that need more than isolated implementation. I can move from
+                                feature requirements into interface decisions, API design, validation, testing, and
+                                deployment while keeping the product goal in view.
+                            </p>
+                        </div>
+
+                        <div class="profile-grid">
+                            <div class="story-stack">
+                                <p data-i18n="profile.story1">
+                                    I started on the quality and operations side of software, which gave me strong
+                                    instincts for regression risk, release pressure, browser-level debugging, and the
+                                    environment issues that can derail otherwise solid code.
+                                </p>
+                                <p data-i18n="profile.story2">
+                                    That background now makes me more effective as a full-stack engineer. I do not
+                                    think about code in isolation. I think about how the UI behaves, whether the flow
+                                    fits real user usage, how the backend supports it, how state is handled, how it is
+                                    tested, and how a team keeps moving once it reaches production.
+                                </p>
+                            </div>
+
+                            <div class="note-stack">
+                                <article class="note-panel">
+                                    <p class="note-label" data-i18n="profile.roles.label">Best fit roles</p>
+                                    <ul class="note-list note-list-dark">
+                                        <li data-i18n="profile.roles.item1">Full-stack software engineer</li>
+                                        <li data-i18n="profile.roles.item2">Product engineer with Angular ownership</li>
+                                        <li data-i18n="profile.roles.item3">Quality-focused product engineer</li>
+                                    </ul>
+                                </article>
+
+                                <article class="note-panel">
+                                    <p class="note-label" data-i18n="profile.notice.label">What teams notice</p>
+                                    <ul class="note-list note-list-dark">
+                                        <li data-i18n="profile.notice.item1">Can own a feature end to end</li>
+                                        <li data-i18n="profile.notice.item2">Clear testing and release thinking</li>
+                                        <li data-i18n="profile.notice.item3">Comfort across frontend, backend, and operations</li>
+                                        <li data-i18n="profile.notice.item4">Practical documentation and async communication</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section reveal" id="value">
+                <div class="section-shell">
+                    <p class="section-label" data-i18n="value.label">Value</p>
+
+                    <div class="section-main">
+                        <div class="section-heading">
+                            <p class="section-kicker" data-i18n="value.kicker">How I add value</p>
+                            <h2 data-i18n="value.title">Build. Verify. Ship.</h2>
+                            <p class="section-intro" data-i18n="value.intro">
+                                The most useful engineers I know reduce friction across the whole delivery path. That
+                                is the role I naturally grow into, especially in teams that want one engineer to carry
+                                a feature across frontend, backend, testing, and release.
+                            </p>
+                        </div>
+
+                        <div class="value-grid">
+                            <article class="value-panel">
+                                <p class="value-number">01</p>
+                                <p class="panel-kicker" data-i18n="value.build.kicker">Build</p>
+                                <h3 data-i18n="value.build.title">Develop full-stack features with product awareness.</h3>
+                                <p data-i18n="value.build.copy">
+                                    I can move from requirements into frontend work, responsive layouts, REST
+                                    integration, service design, authentication, validation, data access, and
+                                    maintainable implementation without losing the business goal.
+                                </p>
+                                <p class="panel-tools">Angular / Bootstrap / TypeScript / Node.js / NestJS / SQL</p>
+                            </article>
+
+                            <article class="value-panel">
+                                <p class="value-number">02</p>
+                                <p class="panel-kicker" data-i18n="value.verify.kicker">Verify</p>
+                                <h3 data-i18n="value.verify.title">Improve delivery confidence before releases get expensive.</h3>
+                                <p data-i18n="value.verify.copy">
+                                    My QA automation background helps me think in edge cases, regression surfaces, UI
+                                    behavior, and verification strategy instead of treating testing as a separate
+                                    phase.
+                                </p>
+                                <p class="panel-tools">Playwright / Jest / release confidence / debugging</p>
+                            </article>
+
+                            <article class="value-panel">
+                                <p class="value-number">03</p>
+                                <p class="panel-kicker" data-i18n="value.ship.kicker">Ship</p>
+                                <h3 data-i18n="value.ship.title">Improve workflows, not just code output.</h3>
+                                <p data-i18n="value.ship.copy">
+                                    I regularly rethink product flows to better match user usage and cleaner code
+                                    patterns, while still understanding the path beyond local development through cloud
+                                    services, CI/CD thinking, and production handoffs.
+                                </p>
+                                <p class="panel-tools">Product thinking / Docker / Google Cloud / CI-CD / async handoffs</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section reveal" id="experience">
+                <div class="section-shell">
+                    <p class="section-label" data-i18n="experience.label">Timeline</p>
+
+                    <div class="section-main">
+                        <div class="section-heading">
+                            <p class="section-kicker" data-i18n="experience.kicker">Experience</p>
+                            <h2 data-i18n="experience.title">A progression shaped by quality, full-stack delivery, backend systems, and release work.</h2>
+                        </div>
+
+                        <div class="timeline">
+                            <article class="timeline-item">
+                                <p class="timeline-year" data-i18n="experience.current.year">2024 - present</p>
+
+                                <div class="timeline-card">
+                                    <p class="timeline-role" data-i18n="experience.current.role">Software Developer</p>
+                                    <p class="timeline-company">Delcom</p>
+                                    <h3 data-i18n="experience.current.title">Owning full-stack delivery in production systems.</h3>
+                                    <ul>
+                                        <li data-i18n="experience.current.item1">Develop production frontend and backend functionality using Angular, Bootstrap, TypeScript, Node.js, NestJS, SQL, and Docker.</li>
+                                        <li data-i18n="experience.current.item2">Build full features end to end, from responsive Angular interfaces and API integration to backend implementation and release support.</li>
+                                        <li data-i18n="experience.current.item3">Design secure REST APIs with authentication, RBAC, validation, and maintainable service architecture.</li>
+                                        <li data-i18n="experience.current.item4">Work daily with Redux and RxJS to manage state and data flow in frontend applications.</li>
+                                        <li data-i18n="experience.current.item5">Bring a quality mindset shaped by automation and debugging, helping reduce release risk and improve maintainability.</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="timeline-item">
+                                <p class="timeline-year">2022 - 2024</p>
+
+                                <div class="timeline-card timeline-card-alt">
+                                    <p class="timeline-role" data-i18n="experience.previous.role">QA Automation Engineer / Cloud Operations</p>
+                                    <p class="timeline-company">Delcom</p>
+                                    <h3 data-i18n="experience.previous.title">Building confidence through testing, documentation, and cloud support.</h3>
+                                    <ul>
+                                        <li data-i18n="experience.previous.item1">Automated regression and feature verification with Playwright, reducing manual testing effort by 80 percent.</li>
+                                        <li data-i18n="experience.previous.item2">Tested frontend behavior and REST API interactions, helping defects surface earlier in the delivery process.</li>
+                                        <li data-i18n="experience.previous.item3">Produced internal and external documentation that improved clarity around product behavior and usage.</li>
+                                        <li data-i18n="experience.previous.item4">Handled cloud and infrastructure-related work in Google Cloud Platform, including static sites, reverse proxies, and service interconnection.</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section reveal" id="capabilities">
+                <div class="section-shell">
+                    <p class="section-label" data-i18n="capabilities.label">Capabilities</p>
+
+                    <div class="section-main">
+                        <div class="section-heading">
+                            <p class="section-kicker" data-i18n="capabilities.kicker">Where I can contribute fast</p>
+                            <h2 data-i18n="capabilities.title">I am most useful where product, frontend, backend, testing, and operations overlap.</h2>
+                        </div>
+
+                        <div class="surface-list">
+                            <article class="surface-item">
+                                <p class="surface-name" data-i18n="capabilities.delivery.name">Full-stack product delivery</p>
+                                <p class="surface-copy" data-i18n="capabilities.delivery.copy">
+                                    End-to-end feature work across interface implementation, REST consumption, service
+                                    design, business logic, validation, and production-ready delivery.
+                                </p>
+                                <p class="surface-tools">Angular, Bootstrap, TypeScript, Node.js, NestJS, SQL</p>
+                            </article>
+
+                            <article class="surface-item">
+                                <p class="surface-name" data-i18n="capabilities.frontend.name">Frontend engineering</p>
+                                <p class="surface-copy" data-i18n="capabilities.frontend.copy">
+                                    Building responsive websites and application interfaces, structuring components,
+                                    handling API integration, rethinking product flows when needed, and keeping the
+                                    frontend practical, maintainable, and aligned with product needs.
+                                </p>
+                                <p class="surface-tools">Bootstrap, HTML, CSS, RxJS, REST integration</p>
+                            </article>
+
+                            <article class="surface-item">
+                                <p class="surface-name" data-i18n="capabilities.backend.name">Backend and API engineering</p>
+                                <p class="surface-copy" data-i18n="capabilities.backend.copy">
+                                    API design, authentication, RBAC, validation, ORM-based data access, service
+                                    structure, and business logic that stays readable as a product evolves.
+                                </p>
+                                <p class="surface-tools">Node.js, NestJS, Express, TypeORM, MySQL</p>
+                            </article>
+
+                            <article class="surface-item">
+                                <p class="surface-name" data-i18n="capabilities.state.name">State and frontend architecture</p>
+                                <p class="surface-copy" data-i18n="capabilities.state.copy">
+                                    Working daily with Redux and RxJS to manage application state, async flows, and
+                                    predictable frontend behavior in production applications.
+                                </p>
+                                <p class="surface-tools">Redux, RxJS, TypeScript, component data flow</p>
+                            </article>
+
+                            <article class="surface-item">
+                                <p class="surface-name" data-i18n="capabilities.quality.name">Quality and test strategy</p>
+                                <p class="surface-copy" data-i18n="capabilities.quality.copy">
+                                    Regression automation, frontend behavior testing, unit testing, release
+                                    confidence, defect investigation, and practical debugging workflows that keep
+                                    quality close to delivery.
+                                </p>
+                                <p class="surface-tools">Playwright, Jest, test design, browser debugging</p>
+                            </article>
+
+                            <article class="surface-item">
+                                <p class="surface-name" data-i18n="capabilities.cloud.name">Cloud and delivery workflows</p>
+                                <p class="surface-copy" data-i18n="capabilities.cloud.copy">
+                                    Deployment awareness, reverse proxies, cloud services, environment management,
+                                    Docker-based workflows, CI/CD thinking, and production visibility through metrics
+                                    and behavior analysis.
+                                </p>
+                                <p class="surface-tools">Google Cloud Platform, Docker, Git, CI/CD pipelines</p>
+                            </article>
+
+                            <article class="surface-item">
+                                <p class="surface-name" data-i18n="capabilities.docs.name">Documentation and collaboration</p>
+                                <p class="surface-copy" data-i18n="capabilities.docs.copy">
+                                    Technical writing, internal and external product documentation, async
+                                    communication, and reducing ambiguity so teams can move faster with fewer handoff
+                                    surprises.
+                                </p>
+                                <p class="surface-tools">Docs, product explanation, written handoffs, remote work</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact-section reveal" id="contact">
+                <div class="section-shell">
+                    <p class="section-label" data-i18n="contact.label">Contact</p>
+
+                    <div class="section-main">
+                        <div class="section-heading">
+                            <p class="section-kicker" data-i18n="contact.kicker">Open to opportunities</p>
+                            <h2 data-i18n="contact.title">Looking for software engineering roles where full-stack ownership, quality, and delivery discipline really matter.</h2>
+                            <p class="section-intro contact-intro" data-i18n="contact.intro">
+                                I am especially interested in teams that want engineers who can build features end to
+                                end, improve how products actually work for users, and stay effective through release.
+                            </p>
+                        </div>
+
+                        <div class="contact-links">
+                            <a href="mailto:antoniogonzalezm1996@gmail.com">antoniogonzalezm1996@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/antoniogonzalezmorales/" target="_blank"
+                                rel="noreferrer">linkedin.com/in/antoniogonzalezmorales</a>
+                            <a href="https://github.com/agm9581" target="_blank" rel="noreferrer">github.com/agm9581</a>
+                            <a href="https://data-pdf.com" target="_blank" rel="noreferrer">data-pdf.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Antonio Gonzalez Morales - <span id="year"></span></p>
+        </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
