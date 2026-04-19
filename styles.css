@@ -827,6 +827,65 @@ a {
     font-size: 1rem;
 }
 
+.project-feature {
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    background: var(--value-panel-bg);
+}
+
+.project-feature-main {
+    max-width: 760px;
+}
+
+.project-feature-label,
+.project-feature-panel-label {
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sea-deep);
+}
+
+.project-feature-title {
+    margin: 14px 0 0;
+    font-family: "Fraunces", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.project-feature-title a {
+    text-decoration: none;
+}
+
+.project-feature-copy {
+    margin: 14px 0 0;
+    max-width: 60ch;
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+}
+
+.project-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.project-feature-panel {
+    padding: 18px 18px 16px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--section-bg);
+}
+
+.project-feature-panel-copy {
+    margin: 10px 0 0;
+    color: var(--ink-soft);
+}
+
 .contact-section {
     border-color: rgba(255, 255, 255, 0.08);
     background: var(--contact-bg);
@@ -924,7 +983,8 @@ a {
     }
 
     .hero-band,
-    .surface-item {
+    .surface-item,
+    .project-feature-grid {
         grid-template-columns: 1fr;
     }
 
